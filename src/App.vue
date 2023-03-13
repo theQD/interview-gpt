@@ -1,13 +1,26 @@
 <template>
   <div>
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <div class="LOGO">复试模拟</div>
+
     </nav>
-    <router-view />
+    <LogIn/>
   </div>
   
 </template>
+
+<script>
+import LogIn from '/src/views/LogIn';
+export default {
+  components:{
+    LogIn,
+
+  }
+    
+};
+
+
+</script>
 
 <style>
 *{
@@ -27,6 +40,12 @@
 
 nav {
   padding: 30px;
+
+  height:30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
 }
 
 nav a {
@@ -36,5 +55,13 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.LOGO{
+  font-size: 30px;
+  font-family: '黑体';
+  font-weight: bold;
+  left:30px;
+  color:black;
 }
 </style>

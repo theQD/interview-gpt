@@ -29,6 +29,7 @@ module.exports = {
     'indent': ['warn', 2], //缩进风格这里不做硬性规定，但是产品组内要达成统一      
     'quotes': ['warn', 'single'], //要求引号类型 `` ' ''      
     'semi': ['error', 'always'], //语句强制分号结尾
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    'requireConfigFile': 0
   }  
 };
